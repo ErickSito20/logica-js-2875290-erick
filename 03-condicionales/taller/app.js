@@ -38,37 +38,27 @@ if (estatura === 170 & velocidad === 20 & edad >15 ){
 }else{
     console.log('no puede ingresar al equipo')
 } */
-
-/*tercero*/ 
-/* let total = prompt ('Ingrese el total de escritorios compradas')
-
-let escritorio = 200
-
-function calcularPorcentaje( escritorio ,porcentaje){
-    return (numero / 100) * porcentaje;
-}
-
- */
-
 let total = prompt ('Ingrese el total de escritorios compradas');
+let totalEscri = (parseFloat(total)) *200;
+let precioEscri= 200;
 
-precioEscri= 200;
-
-function calc(precioEscri,total){
-    return (precioEscri * total) - (precioEscri)
+let diez = (parseFloat(totalEscri)) *0.1 ;
+let veinte = (parseFloat(totalEscri)) *0.2;
+let cuarenta = (parseFloat(totalEscri)) *0.4;
+let menos5 = (parseFloat(totalEscri)) - (parseFloat(diez)) ;
+let menos10 = (parseFloat(totalEscri)) - (parseFloat(veinte));
+let mas10 = (parseFloat(totalEscri)) - (parseFloat(cuarenta));
+if (total>=5 && total<10){
+    console.log('el precio total normalmente seria ' + totalEscri + ' pero con descuento queda en ' + menos10)
+}else if (total > 10){
+    console.log('el precio total normalmente seria ' + totalEscri + ' pero con descuento queda en ' + mas10)
+}else{
+    console.log('el precio total normalmente seria ' + totalEscri + ' pero con descuento queda en ' + menos5)
 }
-
-console.log('el total es' + calc)
-
-
-if (total <5){
-
-}
-
-
 /*
 escritorio vale 200 
 -5 unidades compradas da el 10 % de descuento
->=5 & <10 10  compradas da el 20%
-
+>=5 & <10 unidades  compradas da el 20%
+>=10 unidades  compradas da el 40%
+cuANTO DEBE PAGAR * ESCRITORIO Y CUANTO * DESCUENTO
 */ 
