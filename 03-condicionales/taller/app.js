@@ -38,6 +38,8 @@ if (estatura === 170 & velocidad === 20 & edad >15 ){
 }else{
     console.log('no puede ingresar al equipo')
 } */
+
+/*cuarto*/ 
 let total = prompt ('Ingrese el total de escritorios compradas');
 let totalEscri = (parseFloat(total)) *200;
 let precioEscri= 200;
@@ -62,3 +64,21 @@ escritorio vale 200
 >=10 unidades  compradas da el 40%
 cuANTO DEBE PAGAR * ESCRITORIO Y CUANTO * DESCUENTO
 */ 
+/*quinto*/ 
+
+alert("Listado de frutas disponibles:\n- Manzana\n- Plátano\n- Naranja\n- Fresa\n- Piña");
+
+let fruta1 = prompt("Ingresa el nombre de la fruta que quieras comprar").toLowerCase();
+let cantidadComp = prompt("Ingresa la cantidad que deseas comprar");
+
+let valores = {
+    "manzana": 1400,
+    "plátano": 1000,
+    "naranja": 1200,
+    "fresa": 500,
+    "piña": 2000,
+};
+let valorUnidad = valores[fruta1];
+let total2 = valorUnidad * cantidadComp;
+
+alert("Fruta: " + fruta1 + "\nValor por unidad:$" + parseFloat(valorUnidad) + "\nValor total: $" + parseFloat(total2));
