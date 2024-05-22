@@ -48,6 +48,7 @@ while(inputUsuario != 'salir'){
     inputUsuario = prompt ('Escribe un artista o escribe "salir" para terminar')
     
 }
-for(let i = 0; i < artistas.length; i++) {
-    console.log(`${i+1}.${artistas[i]}`)
+for(let uno = 0; uno < artistas.length; uno++) {
+    console.log(`${uno+1}.${artistas[uno]}`)
 }
+
