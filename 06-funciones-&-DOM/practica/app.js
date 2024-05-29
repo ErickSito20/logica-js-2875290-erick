@@ -43,7 +43,7 @@ if (e == 0){
     pelota.style.marginLeft = '0px';
     pelota.style.backgroundColor = 'black';
     pelota.style.transitionDuration = '.6s';
-    e=0;
+    e=0 ;
 }
 
 
