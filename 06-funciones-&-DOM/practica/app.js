@@ -60,10 +60,6 @@ const img = document.getElementById('miImagen')
 const buttonx = document.getElementById('botton1')
 let i = 0
 function cambiar(){
- if (i == 0){
-    buttonx.setAttribute(src,'imagen2.jpg')
-    img.style.transitionDuration = '.4s';
-
-    i=1;
- }
+    buttonx.setAttribute('imagen2.jpg')
 }
+buttonx.addEventListener('click',cambiar)
